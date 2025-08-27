@@ -1,10 +1,3 @@
-//
-//  AppDelegate.m
-//  AAAA
-//
-//  Created by Duc Truong on 27/8/25.
-//
-
 #import "AppDelegate.h"
 
 @interface AppDelegate ()

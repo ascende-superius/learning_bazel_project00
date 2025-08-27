@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.m
-//  AAAA
-//
-//  Created by Duc Truong on 27/8/25.
-//
-
 #import "SceneDelegate.h"
 #import "MainViewController.h"
 

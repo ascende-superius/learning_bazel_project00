@@ -1,0 +1,5 @@
+build --xcode_version=16.4 --ios_multi_cpus=x86_64,arm64 --config=ios_device
+
+# Build for iOS device
+build:ios_device --cpu=ios_arm64
+build:ios_device --ios_multi_cpus=arm64

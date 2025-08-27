@@ -1,0 +1,12 @@
+1# Bazel
+bazel-*
+/bazel-out/
+/bazel-bin/
+/bazel-testlogs/
+
+# Xcode
+*.xcodeproj/
+xcuserdata/
+
+# macOS
+.DS_Store

@@ -1,0 +1,29 @@
+load("@rules_apple//apple:ios.bzl", "ios_application")
+load("@rules_xcodeproj//xcodeproj:defs.bzl", "xcodeproj", "top_level_target")
+
+objc_library(
+    name = "my-app-lib",
+    srcs = glob(["Sources/**/*.m"]),
+    hdrs = glob(["Sources/**/*.h"]),
+)
+
+ios_application(
+    name = "my-app",
+    bundle_id = "com.example.myapp",
+    families = [
+        "iphone",
+    ],
+    infoplists = [":Info.plist"],
+    minimum_os_version = "15.0",
+    visibility = ["//visibility:public"],
+    deps = [":my-app-lib"],
+)
+
+xcodeproj(
+    name = "xcode-project",
+    project_name = "MyAwesomeApp",
+    tags = ["manual"],
+    top_level_targets = [
+        top_level_target(":my-app", target_environments = ["simulator"]),
+    ],
+)

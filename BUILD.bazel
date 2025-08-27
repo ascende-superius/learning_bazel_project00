@@ -32,4 +32,6 @@ xcodeproj(
     top_level_targets = [
         top_level_target(":my-app", target_environments = ["simulator"]),
     ],
+    index_import = True,
+    index_build = True,
 )

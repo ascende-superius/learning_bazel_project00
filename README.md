@@ -1,6 +1,6 @@
 1# Bazel iOS Objective-C Project (No Storyboard)
 
-This repository serves as a foundational example of an iOS application built using Bazel. It is configured for a pure, programmatic UI approach using Objective-C, completely bypassing the use of Storyboards.
+This repository serves as a foundational example of an iOS application built using Bazel 7. It is configured for a pure, programmatic UI approach using Objective-C, completely bypassing the use of Storyboards.
 
 ## Project Overview
 
